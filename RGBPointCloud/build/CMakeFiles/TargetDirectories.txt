@@ -1,0 +1,1 @@
+/home/huangliang/PointCloudThread/RGBPointCloud/build/CMakeFiles/openni_rgbpointcloud.dir

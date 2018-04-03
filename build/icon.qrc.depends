@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>image/wire.png</file>
+        <file>image/view_raster.png</file>
+        <file>image/textures.png</file>
+        <file>image/splitV.png</file>
+        <file>image/splitH.png</file>
+        <file>image/snapshot.png</file>
+        <file>image/smooth.png</file>
+        <file>image/selected.png</file>
+        <file>image/selected_vert.png</file>
+        <file>image/selected_face.png</file>
+        <file>image/search.png</file>
+        <file>image/save.png</file>
+        <file>image/reload.png</file>
+        <file>image/points.png</file>
+        <file>image/options.png</file>
+        <file>image/open.png</file>
+        <file>image/open_project.png</file>
+        <file>image/normal.png</file>
+        <file>image/lighton.png</file>
+        <file>image/lightoff.png</file>
+        <file>image/layers.png</file>
+        <file>image/info.png</file>
+        <file>image/import_mesh.png</file>
+        <file>image/flatlines.png</file>
+        <file>image/flat.png</file>
+        <file>image/eraser.png</file>
+        <file>image/show_axis.png</file>
+        <file>image/fill.png</file>
+        <file>image/vert_color.png</file>
+        <file>image/bbox.png</file>
+        <file>image/fillhole.png</file>
+    </qresource>
+</RCC>

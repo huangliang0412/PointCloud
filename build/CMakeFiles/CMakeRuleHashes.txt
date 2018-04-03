@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+4d7038347144b701a85d925011098c1e moc_calthread.cxx
+25a0274aec5e48fd09b6c87696487570 moc_changeformat.cxx
+a6f33935804d0ce8c0615edd641604ab moc_fill_hole.cxx
+7ea65985f1b5c6c8ce6875fd45b8e1a4 moc_greedy_triangulation.cxx
+950ded9098eee4b0514092cdf49fdc61 moc_kdtree.cxx
+82d99ed976237dfa5ff48851d2396b18 moc_pclviewer.cxx
+4787ff14a44578e705a7c95a6d903488 moc_pretreatment.cxx
+fd95acf4495fd9f1759f77c2c4a2d6da moc_rgb.cxx
+64074c658f5d0ac5708deeae0b8994fc qrc_icon.cxx
+5676204a9ffd7a6ab1a38ecb93490506 ui_pclviewer.h

@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PCLViewer</class>
+ <widget class="QMainWindow" name="PCLViewer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1373</width>
+    <height>899</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PCLViewer</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QMdiArea" name="mdiArea">
+      <widget class="QWidget" name="subwindow">
+       <property name="windowTitle">
+        <string>子窗口</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QVTKWidget" name="qvtkWidget" native="true"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QProgressBar" name="progressBar">
+              <property name="value">
+               <number>24</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1373</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="OpenAction"/>
+    <addaction name="SaveAction"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>设备</string>
+    </property>
+    <addaction name="KinectAction"/>
+   </widget>
+   <widget class="QMenu" name="menu_E">
+    <property name="title">
+     <string>编辑(&amp;E)</string>
+    </property>
+    <addaction name="SimplyAction"/>
+    <addaction name="MlsAction"/>
+    <addaction name="ReconstructAction"/>
+    <addaction name="SurfaceAction"/>
+    <addaction name="ResetAction"/>
+    <addaction name="NormalAction"/>
+    <addaction name="CleraAction"/>
+   </widget>
+   <widget class="QMenu" name="menu_V">
+    <property name="title">
+     <string>视图(&amp;V)</string>
+    </property>
+    <addaction name="CoordinateAction"/>
+    <addaction name="BackgroudAction"/>
+    <addaction name="VerticesAction"/>
+    <addaction name="HideAction"/>
+    <addaction name="ConfigurationAction"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu"/>
+   <addaction name="menu_E"/>
+   <addaction name="menu_V"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="OpenAction"/>
+   <addaction name="SaveAction"/>
+   <addaction name="separator"/>
+   <addaction name="SimplyAction"/>
+   <addaction name="MlsAction"/>
+   <addaction name="ReconstructAction"/>
+   <addaction name="SurfaceAction"/>
+   <addaction name="ResetAction"/>
+   <addaction name="NormalAction"/>
+   <addaction name="CleraAction"/>
+   <addaction name="separator"/>
+   <addaction name="CoordinateAction"/>
+   <addaction name="BackgroudAction"/>
+   <addaction name="VerticesAction"/>
+   <addaction name="ConfigurationAction"/>
+   <addaction name="HideAction"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="ShowDockWidget">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>The Number of Points</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="PointsNumber"/>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QTextBrowser" name="textBrowser"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="OperateDockWidget">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>                点云精简</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLCDNumber" name="lcdNumber"/>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QSlider" name="KtreeSlider">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="MLSButton">
+          <property name="text">
+           <string>点云平滑</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="DownSampingButton">
+          <property name="text">
+           <string>降采样</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="ReconstructButton">
+          <property name="text">
+           <string>点云重构</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="BuildButton">
+          <property name="text">
+           <string>曲面重建</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="FilterButton">
+          <property name="text">
+           <string>曲面光滑</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="ResetButton">
+          <property name="text">
+           <string>重置</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="ClearButton">
+          <property name="text">
+           <string>清空</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="ConfigurDockWidget">
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_3">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QGroupBox" name="Background_groupBox">
+         <property name="title">
+          <string>BackGround Configure</string>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>251</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6" stretch="3,3,3,1">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="3,0,1">
+             <item>
+              <widget class="QSlider" name="Slider_Backgroud_R">
+               <property name="maximum">
+                <number>255</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>R</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumber_2"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="3,0,0">
+             <item>
+              <widget class="QSlider" name="Slider_Background_G">
+               <property name="maximum">
+                <number>255</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>G</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumber_3"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="3,0,1">
+             <item>
+              <widget class="QSlider" name="Slide_Background_B">
+               <property name="maximum">
+                <number>255</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>B</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumber_4"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>153</width>
+               <height>13</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="Point_Box">
+         <property name="title">
+          <string>Point Configure</string>
+         </property>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>261</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="3,0,0">
+             <item>
+              <widget class="QSlider" name="horizontalSlider_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>R</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumber_5"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="3,0,1">
+             <item>
+              <widget class="QSlider" name="horizontalSlider_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>G</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumber_6"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="3,0,1">
+             <item>
+              <widget class="QSlider" name="horizontalSlider_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>B</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumber_7"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="Leng_roupBox">
+         <property name="title">
+          <string>Len Configure</string>
+         </property>
+         <widget class="QSlider" name="verticalSlider">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>70</y>
+            <width>16</width>
+            <height>160</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>9</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="OpenAction">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/image/image/open.png</normaloff>:/image/image/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开(&amp;N)</string>
+   </property>
+  </action>
+  <action name="KinectAction">
+   <property name="text">
+    <string>Kinect</string>
+   </property>
+  </action>
+  <action name="SaveAction">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/image/image/save.png</normaloff>:/image/image/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存(&amp;S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="SimplyAction">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/image/image/points.png</normaloff>:/image/image/points.png</iconset>
+   </property>
+   <property name="text">
+    <string>点云精简</string>
+   </property>
+  </action>
+  <action name="MlsAction">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/image/image/smooth.png</normaloff>:/image/image/smooth.png</iconset>
+   </property>
+   <property name="text">
+    <string>点云平滑</string>
+   </property>
+  </action>
+  <action name="ReconstructAction">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/image/image/wire.png</normaloff>:/image/image/wire.png</iconset>
+   </property>
+   <property name="text">
+    <string>点云重构</string>
+   </property>
+  </action>
+  <action name="SurfaceAction">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/image/image/flatlines.png</normaloff>:/image/image/flatlines.png</iconset>
+   </property>
+   <property name="text">
+    <string>曲面重建</string>
+   </property>
+  </action>
+  <action name="ResetAction">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/image/image/reload.png</normaloff>:/image/image/reload.png</iconset>
+   </property>
+   <property name="text">
+    <string>点云重置</string>
+   </property>
+  </action>
+  <action name="NormalAction">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/image/image/normal.png</normaloff>:/image/image/normal.png</iconset>
+   </property>
+   <property name="text">
+    <string>显示法线</string>
+   </property>
+  </action>
+  <action name="CleraAction">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/image/image/eraser.png</normaloff>:/image/image/eraser.png</iconset>
+   </property>
+   <property name="text">
+    <string>数据清空</string>
+   </property>
+  </action>
+  <action name="CoordinateAction">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/image/image/show_axis.png</normaloff>:/image/image/show_axis.png</iconset>
+   </property>
+   <property name="text">
+    <string>coordinate</string>
+   </property>
+  </action>
+  <action name="BackgroudAction">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/image/image/fill.png</normaloff>:/image/image/fill.png</iconset>
+   </property>
+   <property name="text">
+    <string>background</string>
+   </property>
+  </action>
+  <action name="VerticesAction">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/image/image/vert_color.png</normaloff>:/image/image/vert_color.png</iconset>
+   </property>
+   <property name="text">
+    <string>vertices</string>
+   </property>
+  </action>
+  <action name="HideAction">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/image/image/layers.png</normaloff>:/image/image/layers.png</iconset>
+   </property>
+   <property name="text">
+    <string>hide</string>
+   </property>
+  </action>
+  <action name="ConfigurationAction">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/image/image/options.png</normaloff>:/image/image/options.png</iconset>
+   </property>
+   <property name="text">
+    <string>configuration</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QVTKWidget</class>
+   <extends>QWidget</extends>
+   <header>QVTKWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Slider_Backgroud_R</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumber_2</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1122</x>
+     <y>167</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1206</x>
+     <y>180</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Slider_Background_G</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumber_3</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1121</x>
+     <y>216</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1206</x>
+     <y>229</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Slide_Background_B</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumber_4</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1122</x>
+     <y>264</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1206</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_4</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumber_5</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1096</x>
+     <y>419</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1181</x>
+     <y>414</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_5</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumber_6</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1066</x>
+     <y>481</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1158</x>
+     <y>475</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_6</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumber_7</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1060</x>
+     <y>526</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1170</x>
+     <y>539</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

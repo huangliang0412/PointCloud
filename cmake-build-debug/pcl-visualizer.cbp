@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="pcl-visualizer"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\lib\;CMake Files\..\..\..\usr\lib\vtk-5.8\;CMake Files\..\..\..\usr\lib\vtk-5.8\CMake\;CMake Files\..\..\..\usr\local\;CMake Files\..\..\..\usr\local\share\;CMake Files\..\..\..\usr\local\share\pcl-1.8\;CMake Files\..\..\..\usr\local\share\pcl-1.8\Modules\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/huangliang/PointCloudThread/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/huangliang/PointCloudThread/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/huangliang/PointCloudThread/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pcl_visualizer">
+				<Option output="/home/huangliang/PointCloudThread/cmake-build-debug/pcl_visualizer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangliang/PointCloudThread/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-Dqh_QHpointer"/>
+					<Add option="-DDISABLE_ENSENSO"/>
+					<Add option="-DDISABLE_DAVIDSDK"/>
+					<Add option="-DDISABLE_DSSDK"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/usr/include/vtk-5.8"/>
+					<Add directory="/usr/local/include/pcl-1.8"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/openni2"/>
+					<Add directory="/usr/include/qt4"/>
+					<Add directory="/usr/include/qt4/QtGui"/>
+					<Add directory="/usr/include/qt4/QtCore"/>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 pcl_visualizer"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pcl_visualizer/fast">
+				<Option output="/home/huangliang/PointCloudThread/cmake-build-debug/pcl_visualizer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangliang/PointCloudThread/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-Dqh_QHpointer"/>
+					<Add option="-DDISABLE_ENSENSO"/>
+					<Add option="-DDISABLE_DAVIDSDK"/>
+					<Add option="-DDISABLE_DSSDK"/>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add option="-DDISABLE_RSSDK"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/usr/include/vtk-5.8"/>
+					<Add directory="/usr/local/include/pcl-1.8"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/openni2"/>
+					<Add directory="/usr/include/qt4"/>
+					<Add directory="/usr/include/qt4/QtGui"/>
+					<Add directory="/usr/include/qt4/QtCore"/>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 pcl_visualizer/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangliang/PointCloudThread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/huangliang/PointCloudThread/calthread.cpp">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/calthread.h">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/cmake-build-debug/moc_calthread.cxx">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/cmake-build-debug/moc_calthread.cxx.rule">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/cmake-build-debug/moc_changeformat.cxx">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/cmake-build-debug/moc_changeformat.cxx.rule">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/cmake-build-debug/moc_fill_hole.cxx">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/cmake-build-debug/moc_fill_hole.cxx.rule">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/cmake-build-debug/moc_greedy_triangulation.cxx">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/cmake-build-debug/moc_greedy_triangulation.cxx.rule">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/cmake-build-debug/moc_kdtree.cxx">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/cmake-build-debug/moc_kdtree.cxx.rule">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/cmake-build-debug/moc_pclviewer.cxx">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/cmake-build-debug/moc_pclviewer.cxx.rule">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/cmake-build-debug/moc_pretreatment.cxx">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/cmake-build-debug/moc_pretreatment.cxx.rule">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/cmake-build-debug/qrc_icon.cxx">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/cmake-build-debug/ui_pclviewer.h">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/fill_hole.cpp">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/fill_hole.h">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/greedy_triangulation.cpp">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/greedy_triangulation.h">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/icon.qrc">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/kdtree.cpp">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/kdtree.h">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/main.cpp">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/pclviewer.cpp">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/pclviewer.h">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/pclviewer.ui">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/pretreatment.cpp">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/pretreatment.h">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/select_cloud.h">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/smoothSurface.cpp">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/smoothSurface.h">
+			<Option target="pcl_visualizer"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/icon.qrc">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/VTKConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/VTKConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/VTKConfigQt.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/VTKTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/VTKTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/VTKConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/VTKConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/VTKConfigQt.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/UseVTK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/VTKConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/VTKConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/VTKConfigQt.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/UseVTK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/VTKConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/VTKConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/VTKConfigQt.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/UseVTK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/lib/vtk-5.8/CMake/vtkMakeInstantiator.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\CMake\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/PCLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/PCLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/Modules/FindEigen.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\Modules\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/Modules/FindFLANN.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\Modules\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/Modules/FindFLANN.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\Modules\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/Modules/FindOpenNI.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\Modules\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/Modules/FindOpenNI2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\Modules\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/Modules/FindEnsenso.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\Modules\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/Modules/FinddavidSDK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\Modules\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/Modules/FindDSSDK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\Modules\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/Modules/FindOpenNI.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\Modules\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/Modules/FindOpenNI2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\Modules\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/Modules/FindEnsenso.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\Modules\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/Modules/FinddavidSDK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\Modules\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/Modules/FindDSSDK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\Modules\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/Modules/FindRSSDK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\Modules\"/>
+		</Unit>
+		<Unit filename="/home/huangliang/PointCloudThread/../../../usr/local/share/pcl-1.8/Modules/FindQhull.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\Modules\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
